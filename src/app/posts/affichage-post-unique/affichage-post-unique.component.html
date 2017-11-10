@@ -1,0 +1,8 @@
+<div>
+  {{post.content}}, rédigé par {{post.userId}}
+  <div *ngIf="post.img">
+    <img src={{post.img}}/>
+  </div>
+</div>
+
+<app-affichage-comments [p]="post"></app-affichage-comments>

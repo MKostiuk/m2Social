@@ -1,0 +1,9 @@
+<ul>
+  <i *ngFor='let p of posts, let i = index'>
+    <li>
+    <div>
+      <a [routerLink]="['/posts/', p.id]"> {{p.content}}</a>
+    </div>
+    </li>
+  </i>
+</ul>

@@ -1,0 +1,9 @@
+<ul>
+  <i *ngFor='let c of comments, let i = index'>
+    <li>
+      <div>
+        {{c.userId}} a répondu {{c.content}}
+      </div>
+    </li>
+  </i>
+</ul>

@@ -1,0 +1,9 @@
+<ul>
+  <i *ngFor='let u of users, let i = index'>
+    <li>
+      <div>
+        <a [routerLink]="['/posts/', u.id]"> {{u.firstName}}</a>
+      </div>
+    </li>
+  </i>
+</ul>
